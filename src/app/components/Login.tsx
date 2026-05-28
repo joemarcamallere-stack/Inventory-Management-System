@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import { Apple, Mail, Lock, Eye, EyeOff } from "lucide-react";
+import { Apple, Mail, Lock, Eye, EyeOff, Boxes, Package, TrendingUp, AlertCircle, Calendar } from "lucide-react";
 import logoImage from "../../imports/image-1.png";
 
 export function Login() {
@@ -45,9 +45,42 @@ export function Login() {
           </div>
         </div>
 
+        {/* Center Graphic */}
+        <div className="relative z-10 flex-1 flex items-center justify-center my-8">
+          <div className="relative w-full max-w-sm">
+            {/* Background glowing circle */}
+            <div className="absolute inset-0 bg-white/20 rounded-full blur-3xl"></div>
+            
+            {/* Floating Cards representing dashboard metrics */}
+            <div className="relative grid grid-cols-2 gap-4">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center transform -translate-y-4 hover:-translate-y-6 transition-transform duration-300 hover:shadow-xl">
+                <Package className="w-8 h-8 mb-3 text-white/90" />
+                <span className="text-3xl font-bold text-white">1,248</span>
+                <span className="text-xs text-white/70 font-medium uppercase tracking-wider mt-1">Total Items</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center transform translate-y-4 hover:translate-y-2 transition-transform duration-300 hover:shadow-xl">
+                <TrendingUp className="w-8 h-8 mb-3 text-emerald-400" />
+                <span className="text-3xl font-bold text-white">+14%</span>
+                <span className="text-xs text-white/70 font-medium uppercase tracking-wider mt-1">Restock Rate</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center transform -translate-y-2 hover:-translate-y-4 transition-transform duration-300 hover:shadow-xl">
+                <AlertCircle className="w-8 h-8 mb-3 text-rose-400" />
+                <span className="text-3xl font-bold text-white">3</span>
+                <span className="text-xs text-white/70 font-medium uppercase tracking-wider mt-1">Low Stock</span>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center transform translate-y-6 hover:translate-y-4 transition-transform duration-300 hover:shadow-xl">
+                <Calendar className="w-8 h-8 mb-3 text-amber-400" />
+                <span className="text-3xl font-bold text-white">12</span>
+                <span className="text-xs text-white/70 font-medium uppercase tracking-wider mt-1">Expiring Soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="relative z-10 text-white">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/20 border border-white/30 mb-6 backdrop-blur-sm shadow-sm">
-            <span className="text-sm font-medium">📦 Smart Inventory Management System</span>
+            <Boxes className="w-5 h-5 text-white/90" />
+            <span className="text-sm font-medium">Smart Inventory Management System</span>
           </div>
           <h2 className="text-4xl font-bold mb-4">Manage Your Food Inventory with Ease</h2>
           <p className="text-white/90 text-lg leading-relaxed">
