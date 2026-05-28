@@ -49,11 +49,15 @@ export function Login() {
         <div className="relative z-10 flex-1 flex items-center justify-center my-8">
           <div className="relative flex items-center justify-center">
             {/* Background glowing circle */}
-            <div className="absolute inset-0 bg-white/30 rounded-full blur-[80px] w-64 h-64 m-auto"></div>
+            <div className="absolute inset-0 bg-white/40 rounded-full blur-[60px] w-56 h-56 m-auto"></div>
+            
+            {/* Decorative Rings to draw attention */}
+            <div className="absolute w-72 h-72 border border-white/20 rounded-full animate-[spin_60s_linear_infinite]"></div>
+            <div className="absolute w-80 h-80 border border-white/10 rounded-full border-dashed animate-[spin_40s_linear_infinite_reverse]"></div>
             
             {/* Large Inventory Icon */}
-            <div className="relative bg-white/10 backdrop-blur-md border border-white/20 p-12 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.2)] transform hover:scale-105 transition-all duration-500">
-              <Boxes className="w-32 h-32 text-white drop-shadow-xl" strokeWidth={1} />
+            <div className="relative bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-md border border-white/40 p-12 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(255,255,255,0.3)] transform hover:scale-105 transition-all duration-500 group">
+              <Boxes className="w-32 h-32 text-white drop-shadow-2xl group-hover:text-blue-50 transition-colors duration-300" strokeWidth={1.5} />
             </div>
           </div>
         </div>
