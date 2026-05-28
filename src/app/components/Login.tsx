@@ -47,32 +47,13 @@ export function Login() {
 
         {/* Center Graphic */}
         <div className="relative z-10 flex-1 flex items-center justify-center my-8">
-          <div className="relative w-full max-w-sm">
+          <div className="relative flex items-center justify-center">
             {/* Background glowing circle */}
-            <div className="absolute inset-0 bg-white/20 rounded-full blur-3xl"></div>
+            <div className="absolute inset-0 bg-white/30 rounded-full blur-[80px] w-64 h-64 m-auto"></div>
             
-            {/* Floating Cards representing dashboard metrics */}
-            <div className="relative grid grid-cols-2 gap-4">
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center transform -translate-y-4 hover:-translate-y-6 transition-transform duration-300 hover:shadow-xl">
-                <Package className="w-8 h-8 mb-3 text-white/90" />
-                <span className="text-3xl font-bold text-white">1,248</span>
-                <span className="text-xs text-white/70 font-medium uppercase tracking-wider mt-1">Total Items</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center transform translate-y-4 hover:translate-y-2 transition-transform duration-300 hover:shadow-xl">
-                <TrendingUp className="w-8 h-8 mb-3 text-emerald-400" />
-                <span className="text-3xl font-bold text-white">+14%</span>
-                <span className="text-xs text-white/70 font-medium uppercase tracking-wider mt-1">Restock Rate</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center transform -translate-y-2 hover:-translate-y-4 transition-transform duration-300 hover:shadow-xl">
-                <AlertCircle className="w-8 h-8 mb-3 text-rose-400" />
-                <span className="text-3xl font-bold text-white">3</span>
-                <span className="text-xs text-white/70 font-medium uppercase tracking-wider mt-1">Low Stock</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center transform translate-y-6 hover:translate-y-4 transition-transform duration-300 hover:shadow-xl">
-                <Calendar className="w-8 h-8 mb-3 text-amber-400" />
-                <span className="text-3xl font-bold text-white">12</span>
-                <span className="text-xs text-white/70 font-medium uppercase tracking-wider mt-1">Expiring Soon</span>
-              </div>
+            {/* Large Inventory Icon */}
+            <div className="relative bg-white/10 backdrop-blur-md border border-white/20 p-12 rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(255,255,255,0.2)] transform hover:scale-105 transition-all duration-500">
+              <Boxes className="w-32 h-32 text-white drop-shadow-xl" strokeWidth={1} />
             </div>
           </div>
         </div>
