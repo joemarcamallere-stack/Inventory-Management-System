@@ -46,6 +46,9 @@ export function Login() {
         </div>
 
         <div className="relative z-10 text-white">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/20 border border-white/30 mb-6 backdrop-blur-sm shadow-sm">
+            <span className="text-sm font-medium">📦 Smart Inventory Management System</span>
+          </div>
           <h2 className="text-4xl font-bold mb-4">Manage Your Food Inventory with Ease</h2>
           <p className="text-white/90 text-lg leading-relaxed">
             Track food items, manage expiration dates, and reduce waste with our specialized food inventory platform.
